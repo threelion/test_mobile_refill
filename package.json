@@ -22,9 +22,7 @@
     "stringify": "^5.2.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
-    "watchify": "^3.9.0"
-  },
-  "dependencies": {
+    "watchify": "^3.9.0",
     "angular-flash-alert": "^2.5.0",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^8.0.0",

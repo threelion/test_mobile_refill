@@ -1,6 +1,6 @@
 <div ng-if="! selectedOperator" class="row operators-container">
 	<div class="col-12">
-		<center><h3>Choose an operator to refill</h3></center>
+		<center><h3>Выберите мобильного оператора</h3></center>
 		
 	</div>
 	<div class="col-lg-4 col-sm-6 col-12" ng-repeat="operator in operators">
@@ -33,8 +33,8 @@
 	</div>
 	<div class="col-12 col-md-6">
 		<div class="input-group">
-			<span class="input-group-addon">Amount</span>
-			<input class="form-control" type="number" ng-model="userData.amount" min="1" max="1000" focus-on="amount" ng-focus="onTextClick($event)"><span class="input-group-addon">rub </span>
+			<span class="input-group-addon">Сумма</span>
+			<input class="form-control" type="number" ng-model="userData.amount" min="1" max="1000" focus-on="amount" ng-focus="onTextClick($event)"><span class="input-group-addon">руб </span>
 		</div>
 	</div>
 	<div class="col-0 col-md-3">
@@ -44,8 +44,8 @@
 	</div>
 	<div class="col-12 col-md-6">
 		<center>
-			<button class="btn btn-primary" ng-click="goBack()">Cancel</button>
-			<button class="btn btn-primary" ng-click="refill()">Refill</button>
+			<button class="btn btn-primary" ng-click="goBack()">Отмена</button>
+			<button class="btn btn-primary" ng-click="refill()">Пополнить</button>
 		</center>
 	</div>
 	<div class="col-0 col-md-3">
@@ -82,7 +82,7 @@
         <div class="row">
             <div class="col md-12">
             	<center>
-	               	<button class="btn btn-primary" ng-click="closeInfo()">Close</button>
+	               	<button class="btn btn-primary" ng-click="closeInfo()">Закрыть</button>
             	</center>
             </div>
         </div>

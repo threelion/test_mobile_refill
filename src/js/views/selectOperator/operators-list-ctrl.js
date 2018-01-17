@@ -55,7 +55,7 @@ function OperatorsListCtrl($scope, $state, OperatorService, focus, Flash) {
 
 			OperatorService.refill(data)
 				.then(function(data){
-					console.log('Successfully refilled!!');
+					console.log('Успешно пополнен!');
 
 					$scope.showInfo = {
 						active: true,
@@ -84,7 +84,7 @@ function OperatorsListCtrl($scope, $state, OperatorService, focus, Flash) {
 
 		console.log(data);
 
-		var result = "Phone # " + data.data.phone + "  successfully refilled! You'll receive a sms about it soon";
+		var result = "Телефонный номер " + data.data.phone + " успешно пополнен! Вы скоро получите об этом sms";
 		
 		return result;
 	}
@@ -122,19 +122,19 @@ function OperatorsListCtrl($scope, $state, OperatorService, focus, Flash) {
 		clearValidationErrors();
 
 		if (o.amount < 1 || ! o.amount) {
-			$scope.validationErrors.amount = "Amount should be positive!";
+			$scope.validationErrors.amount = "Сумма должна быть положительной!";
 			focus('amount');
 			result = false;
 		}
 
 		if (o.amount > 1000) {
-			$scope.validationErrors.amount = "Amount should be less than 1 000!";
+			$scope.validationErrors.amount = "Сумма пополнения не должна превышать 1 000 руб!";
 			focus('amount');
 			result = false;
 		}
 
 		if (! o.phone) {
-			$scope.validationErrors.phone = "Invalid phone number!";
+			$scope.validationErrors.phone = "Неверный номер телефона!";
 			focus('phone');
 			result = false;
 		}

@@ -21,7 +21,7 @@ function OperatorService($q) {
         if (rnd < 0.3) {
             return $q.reject({ 
                 status: 503, 
-                errorMessage: 'Sorry, service temporary unavailable! Try later please' 
+                errorMessage: 'Извините, сервис временно не доступен! Попробуйте немного позже, пожайлуйста' 
             })
         } else {
             return $q.resolve({ 
