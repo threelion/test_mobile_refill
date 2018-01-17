@@ -1,0 +1,30 @@
+.operators-container {
+  text-align: center; }
+
+.small-logo {
+  width: 70px;
+  height: 70px; }
+
+.cover-modal {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  opacity: 0.9;
+  display: flex; }
+
+#modal-refill-result {
+  padding: 25px;
+  z-index: 50;
+  width: 80%;
+  display: inline-block;
+  margin: auto;
+  background: LightCyan;
+  border: 2px solid black; }
+
+.result-success {
+  color: green; }
+
+.result-failed {
+  color: red; }
